@@ -13,7 +13,6 @@
 		334F0CF328EF41EB00900CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF128EF41EB00900CFF /* Main.storyboard */; };
 		334F0CF528EF41EC00900CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF428EF41EC00900CFF /* Assets.xcassets */; };
 		334F0CF828EF41EC00900CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF628EF41EC00900CFF /* LaunchScreen.storyboard */; };
-		334F0D0028EF442A00900CFF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0CFF28EF442A00900CFF /* HomeVC.swift */; };
 		334F0D0228EF458100900CFF /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0128EF458100900CFF /* MyCell.swift */; };
 		334F0D0428EF464500900CFF /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0328EF464500900CFF /* TableVC.swift */; };
 		334F0D0628EF46AC00900CFF /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0528EF46AC00900CFF /* Ninja.swift */; };
@@ -29,7 +28,6 @@
 		334F0CF428EF41EC00900CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		334F0CF728EF41EC00900CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		334F0CF928EF41EC00900CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		334F0CFF28EF442A00900CFF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		334F0D0128EF458100900CFF /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		334F0D0328EF464500900CFF /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		334F0D0528EF46AC00900CFF /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				334F0CF428EF41EC00900CFF /* Assets.xcassets */,
 				334F0CF628EF41EC00900CFF /* LaunchScreen.storyboard */,
 				334F0CF928EF41EC00900CFF /* Info.plist */,
-				334F0CFF28EF442A00900CFF /* HomeVC.swift */,
 				334F0D0128EF458100900CFF /* MyCell.swift */,
 				334F0D0328EF464500900CFF /* TableVC.swift */,
 				334F0D0528EF46AC00900CFF /* Ninja.swift */,
@@ -156,7 +153,6 @@
 				334F0D0828EF46C700900CFF /* ProtocolNinja.swift in Sources */,
 				334F0CF028EF41EB00900CFF /* ViewController.swift in Sources */,
 				334F0D0228EF458100900CFF /* MyCell.swift in Sources */,
-				334F0D0028EF442A00900CFF /* HomeVC.swift in Sources */,
 				334F0D0628EF46AC00900CFF /* Ninja.swift in Sources */,
 				334F0D0428EF464500900CFF /* TableVC.swift in Sources */,
 				334F0CEC28EF41EB00900CFF /* AppDelegate.swift in Sources */,
