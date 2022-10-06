@@ -21,48 +21,48 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="proCell" rowHeight="200" id="nVR-9Z-hGG" customClass="MyCell" customModule="Ejercicio3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="proCell" rowHeight="150" id="b5w-fn-bQ8" customClass="MyCell" customModule="Ejercicio3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nVR-9Z-hGG" id="oEG-it-f5l">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b5w-fn-bQ8" id="O1K-Oe-aHk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-To-xNM">
-                                                    <rect key="frame" x="30" y="21" width="200" height="158"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0lg-kJ-nfP">
+                                                    <rect key="frame" x="30" y="21" width="120" height="108"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="200" id="HeB-Ip-nXw"/>
+                                                        <constraint firstAttribute="width" constant="120" id="hIO-qw-aHu"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="808-CW-RF7">
-                                                    <rect key="frame" x="245" y="36" width="134" height="30"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1b-Xc-lwR">
+                                                    <rect key="frame" x="180" y="36" width="199" height="36"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILLAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-IA-h48">
-                                                    <rect key="frame" x="245" y="143.5" width="134" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILLAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugH-ER-sDd">
+                                                    <rect key="frame" x="180" y="87.5" width="199" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ZPo-To-xNM" firstAttribute="top" secondItem="oEG-it-f5l" secondAttribute="topMargin" constant="10" id="2xb-bE-P3S"/>
-                                                <constraint firstItem="6rM-IA-h48" firstAttribute="leading" secondItem="ZPo-To-xNM" secondAttribute="trailing" constant="15" id="9Zf-sA-bvD"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ZPo-To-xNM" secondAttribute="bottom" constant="10" id="FJi-7t-DRL"/>
-                                                <constraint firstItem="ZPo-To-xNM" firstAttribute="leading" secondItem="oEG-it-f5l" secondAttribute="leadingMargin" constant="10" id="KfQ-1a-SSR"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="6rM-IA-h48" secondAttribute="trailing" constant="15" id="LD7-Qf-XPK"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="808-CW-RF7" secondAttribute="trailing" constant="15" id="an1-zB-fX9"/>
-                                                <constraint firstItem="808-CW-RF7" firstAttribute="top" secondItem="oEG-it-f5l" secondAttribute="topMargin" constant="25" id="wHh-lq-pUM"/>
-                                                <constraint firstItem="808-CW-RF7" firstAttribute="leading" secondItem="ZPo-To-xNM" secondAttribute="trailing" constant="15" id="wT9-Ka-QU4"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="6rM-IA-h48" secondAttribute="bottom" constant="25" id="xh2-5B-yER"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0lg-kJ-nfP" secondAttribute="bottom" constant="10" id="1Uo-e5-e9K"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ugH-ER-sDd" secondAttribute="trailing" constant="15" id="5c0-Qf-Nqg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ugH-ER-sDd" secondAttribute="bottom" constant="25" id="U1P-Gb-Mkt"/>
+                                                <constraint firstItem="u1b-Xc-lwR" firstAttribute="top" secondItem="O1K-Oe-aHk" secondAttribute="topMargin" constant="25" id="VVk-nf-lp6"/>
+                                                <constraint firstItem="u1b-Xc-lwR" firstAttribute="leading" secondItem="0lg-kJ-nfP" secondAttribute="trailing" constant="30" id="Z5v-Ec-lPN"/>
+                                                <constraint firstItem="0lg-kJ-nfP" firstAttribute="top" secondItem="O1K-Oe-aHk" secondAttribute="topMargin" constant="10" id="nHs-2M-tHI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="u1b-Xc-lwR" secondAttribute="trailing" constant="15" id="oSj-dQ-EKc"/>
+                                                <constraint firstItem="ugH-ER-sDd" firstAttribute="leading" secondItem="0lg-kJ-nfP" secondAttribute="trailing" constant="30" id="pal-jL-PD8"/>
+                                                <constraint firstItem="0lg-kJ-nfP" firstAttribute="leading" secondItem="O1K-Oe-aHk" secondAttribute="leadingMargin" constant="10" id="v4W-YU-adp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameLB" destination="808-CW-RF7" id="KDh-dB-AHJ"/>
-                                            <outlet property="ninjaIV" destination="ZPo-To-xNM" id="OB5-NW-BJe"/>
-                                            <outlet property="villageLB" destination="6rM-IA-h48" id="CLY-G4-0KF"/>
+                                            <outlet property="nameLB" destination="u1b-Xc-lwR" id="p68-EB-nMw"/>
+                                            <outlet property="ninjaIV" destination="0lg-kJ-nfP" id="zE2-qW-fQC"/>
+                                            <outlet property="villageLB" destination="ugH-ER-sDd" id="NkC-Ek-O9K"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
