@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,10 +67,54 @@
                             <outlet property="delegate" destination="3tB-jO-Fmx" id="jy9-Qk-TCi"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="tf3-9E-cJm" kind="showDetail" identifier="toDetail" id="gUz-C8-ZXt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfv-No-72s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297.10144927536237" y="-65.625"/>
+            <point key="canvasLocation" x="-267" y="-66"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="9cZ-EC-mVo">
+            <objects>
+                <viewController id="tf3-9E-cJm" customClass="DetailVC" customModule="Ejercicio3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lOx-i7-ejN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YCo-tf-wxc">
+                                <rect key="frame" x="10" y="64" width="394" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="b8e-yj-QCp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwN-7X-iFU">
+                                <rect key="frame" x="10" y="374" width="394" height="44.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WXP-wW-hSV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZwN-7X-iFU" firstAttribute="top" secondItem="YCo-tf-wxc" secondAttribute="bottom" constant="10" id="3RP-ec-TG5"/>
+                            <constraint firstItem="YCo-tf-wxc" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" constant="10" id="B4k-LO-CGj"/>
+                            <constraint firstItem="WXP-wW-hSV" firstAttribute="trailing" secondItem="YCo-tf-wxc" secondAttribute="trailing" constant="10" id="OaS-j4-Frw"/>
+                            <constraint firstItem="YCo-tf-wxc" firstAttribute="top" secondItem="WXP-wW-hSV" secondAttribute="top" constant="20" id="Quk-VS-NbR"/>
+                            <constraint firstItem="WXP-wW-hSV" firstAttribute="trailing" secondItem="ZwN-7X-iFU" secondAttribute="trailing" constant="10" id="TF4-pm-rTh"/>
+                            <constraint firstItem="ZwN-7X-iFU" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" constant="10" id="kug-hu-ZLm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailImage" destination="YCo-tf-wxc" id="EMw-vf-qUm"/>
+                        <outlet property="nameLB" destination="ZwN-7X-iFU" id="qCc-LC-i8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sl9-QQ-ftF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566.66666666666674" y="-66.294642857142861"/>
         </scene>
     </scenes>
     <resources>
