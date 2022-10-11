@@ -7,17 +7,21 @@
 
 import Foundation
 class Ninja: ProtocolNinja{
+    
+    
     var imageUrl: String
     var name: String
     var village: String
+    var description: String
     
-    init(imageUrl:String, name:String, village:String){
+    init(imageUrl:String, name:String, village:String, description:String){
         self.imageUrl = imageUrl
         self.name = name
         self.village = village
+        self.description = description
     }
     
-    
+
     func getImageUrl() -> String {
         return imageUrl
     }
@@ -30,6 +34,10 @@ class Ninja: ProtocolNinja{
         return village
     }
     
+    func getDescription() -> String {
+        return description
+    }
+    
     func setImageUrl(giveURL: String) {
         imageUrl = giveURL
     }
@@ -40,6 +48,10 @@ class Ninja: ProtocolNinja{
     
     func setVillage(giveVillage: String) {
         village = giveVillage
+    }
+    
+    func setDescription(giveDescription: String) {
+        description = giveDescription
     }
     
  

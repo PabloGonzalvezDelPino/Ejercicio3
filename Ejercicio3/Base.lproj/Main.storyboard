@@ -95,21 +95,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8C-vg-My9">
+                                <rect key="frame" x="0.0" y="616" width="414" height="216"/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-yf-MYn">
+                                <rect key="frame" x="30" y="438.5" width="354" height="157.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WXP-wW-hSV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZwN-7X-iFU" firstAttribute="top" secondItem="YCo-tf-wxc" secondAttribute="bottom" constant="10" id="3RP-ec-TG5"/>
                             <constraint firstItem="YCo-tf-wxc" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" constant="10" id="B4k-LO-CGj"/>
+                            <constraint firstItem="Ged-yf-MYn" firstAttribute="top" secondItem="ZwN-7X-iFU" secondAttribute="bottom" constant="20" id="Lbl-Dc-Dxc"/>
+                            <constraint firstItem="WXP-wW-hSV" firstAttribute="bottom" secondItem="j8C-vg-My9" secondAttribute="bottom" constant="10" id="LwN-2N-0aX"/>
+                            <constraint firstItem="Ged-yf-MYn" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" constant="30" id="ON8-8i-mMd"/>
                             <constraint firstItem="WXP-wW-hSV" firstAttribute="trailing" secondItem="YCo-tf-wxc" secondAttribute="trailing" constant="10" id="OaS-j4-Frw"/>
                             <constraint firstItem="YCo-tf-wxc" firstAttribute="top" secondItem="WXP-wW-hSV" secondAttribute="top" constant="20" id="Quk-VS-NbR"/>
+                            <constraint firstItem="WXP-wW-hSV" firstAttribute="trailing" secondItem="Ged-yf-MYn" secondAttribute="trailing" constant="30" id="ST9-ax-wgL"/>
                             <constraint firstItem="WXP-wW-hSV" firstAttribute="trailing" secondItem="ZwN-7X-iFU" secondAttribute="trailing" constant="10" id="TF4-pm-rTh"/>
+                            <constraint firstItem="j8C-vg-My9" firstAttribute="trailing" secondItem="WXP-wW-hSV" secondAttribute="trailing" id="hde-4v-kRC"/>
                             <constraint firstItem="ZwN-7X-iFU" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" constant="10" id="kug-hu-ZLm"/>
+                            <constraint firstItem="j8C-vg-My9" firstAttribute="top" secondItem="Ged-yf-MYn" secondAttribute="bottom" constant="20" id="mPx-H3-irX"/>
+                            <constraint firstItem="j8C-vg-My9" firstAttribute="leading" secondItem="WXP-wW-hSV" secondAttribute="leading" id="spY-cx-70W"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="detailImage" destination="YCo-tf-wxc" id="EMw-vf-qUm"/>
                         <outlet property="nameLB" destination="ZwN-7X-iFU" id="qCc-LC-i8P"/>
+                        <outlet property="textTV" destination="Ged-yf-MYn" id="2eE-y0-uao"/>
+                        <outlet property="villagePV" destination="j8C-vg-My9" id="CPH-6u-P35"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl9-QQ-ftF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -118,6 +138,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

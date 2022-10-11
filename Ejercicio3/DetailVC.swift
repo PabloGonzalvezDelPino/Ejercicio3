@@ -7,15 +7,34 @@
 
 import UIKit
 
-class DetailVC: UIViewController {
+class DetailVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
+    
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var nameLB: UILabel!
+    @IBOutlet weak var textTV: UITextView!
+    @IBOutlet weak var villagePV: UIPickerView!
     
     var cellName: String = ""
     var cellUrl: String = ""
+    var cellText: String = ""
+    let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        villagePV.delegate = self
+        villagePV.dataSource = self
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        options.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let title = self.options[row]
+        return title
+    }
 
-    @IBOutlet weak var detailImage: UIImageView!
-    
-    @IBOutlet weak var nameLB: UILabel!
-    
     override func viewWillAppear(_ animated: Bool) {
         let url = URL(string: cellUrl)
         let data = try? Data(contentsOf: url!)
@@ -23,6 +42,7 @@ class DetailVC: UIViewController {
         
         nameLB.text = cellName
         detailImage.image = image
+        textTV.text = cellText
     }
 
 
