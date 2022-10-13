@@ -17,6 +17,8 @@ class DetailVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     var cellName: String = ""
     var cellUrl: String = ""
     var cellText: String = ""
+    var cellVillage: String = ""
+    
     let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
     
     override func viewDidLoad() {
@@ -43,7 +45,11 @@ class DetailVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
         nameLB.text = cellName
         detailImage.image = image
         textTV.text = cellText
-    }
+        villagePV.selectRow(options.index(of:cellVillage) ?? 0, inComponent: 0, animated: true)
+           
+        }
+        
+    
 
 
 
