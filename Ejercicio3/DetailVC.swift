@@ -46,7 +46,7 @@ class DetailVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
         detailImage.image = image
         textTV.text = cellText
         villagePV.selectRow(options.index(of:cellVillage) ?? 0, inComponent: 0, animated: true)
-           
+        villagePV.isUserInteractionEnabled = false
         }
         
     

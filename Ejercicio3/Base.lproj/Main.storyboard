@@ -61,6 +61,31 @@
                                     <outlet property="villageLB" destination="Cc0-wM-d6b" id="vcZ-jn-fGo"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" id="5v0-I2-4sd" customClass="ButtonCell">
+                                <rect key="frame" x="0.0" y="194.5" width="414" height="32.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5v0-I2-4sd" id="F4x-GX-jR8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="32.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-M5-XfH">
+                                            <rect key="frame" x="10" y="0.5" width="394" height="31.5"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="ADD"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="bjV-M5-XfH" secondAttribute="bottom" constant="0.5" id="4hZ-Yn-uB8"/>
+                                        <constraint firstAttribute="trailing" secondItem="bjV-M5-XfH" secondAttribute="trailing" constant="10" id="Df5-66-bzk"/>
+                                        <constraint firstItem="bjV-M5-XfH" firstAttribute="leading" secondItem="F4x-GX-jR8" secondAttribute="leading" constant="10" id="Ep9-CZ-Xs4"/>
+                                        <constraint firstItem="bjV-M5-XfH" firstAttribute="top" secondItem="F4x-GX-jR8" secondAttribute="top" constant="0.5" id="IPf-us-mf3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addBT" destination="F4x-GX-jR8" id="4lQ-2K-7Of"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="3tB-jO-Fmx" id="6vF-z0-Tuy"/>
