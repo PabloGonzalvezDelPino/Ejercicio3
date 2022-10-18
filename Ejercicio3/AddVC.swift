@@ -15,7 +15,15 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     @IBOutlet weak var villagePV: UIPickerView!
     
     let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
+    let imagePredURL = "https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png"
     
+    override func viewWillAppear(_ animated: Bool) {
+        let url = URL(string: imagePredURL)
+        let data = try? Data(contentsOf: url!)
+        let image: UIImage = UIImage(data: data!)!
+        addImage.image = image
+        }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         villagePV.delegate = self
@@ -30,14 +38,5 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let title = self.options[row]
         return title
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }   
 }
