@@ -16,7 +16,7 @@
 		334F0D0C28EF4FA200900CFF /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0B28EF4FA200900CFF /* Ninja.swift */; };
 		334F0D0E28EF501F00900CFF /* ProtocolNinja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */; };
 		334F0D1028EF504C00900CFF /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0F28EF504C00900CFF /* MyCell.swift */; };
-		33B7E46328F9E09B0009FF74 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7E46228F9E09B0009FF74 /* ButtonCell.swift */; };
+		33DA7C0D28FF0D7A003DA71D /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA7C0C28FF0D7A003DA71D /* AddVC.swift */; };
 		33F13DC828F09F61009B0B26 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F13DC728F09F61009B0B26 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		334F0D0B28EF4FA200900CFF /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
 		334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNinja.swift; sourceTree = "<group>"; };
 		334F0D0F28EF504C00900CFF /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
-		33B7E46228F9E09B0009FF74 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		33DA7C0C28FF0D7A003DA71D /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		33F13DC728F09F61009B0B26 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */,
 				334F0D0F28EF504C00900CFF /* MyCell.swift */,
 				33F13DC728F09F61009B0B26 /* DetailVC.swift */,
-				33B7E46228F9E09B0009FF74 /* ButtonCell.swift */,
+				33DA7C0C28FF0D7A003DA71D /* AddVC.swift */,
 			);
 			path = Ejercicio3;
 			sourceTree = "<group>";
@@ -153,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DA7C0D28FF0D7A003DA71D /* AddVC.swift in Sources */,
 				334F0CEC28EF41EB00900CFF /* AppDelegate.swift in Sources */,
 				334F0D0A28EF4F2200900CFF /* TableViewController.swift in Sources */,
 				334F0D0C28EF4FA200900CFF /* Ninja.swift in Sources */,
@@ -160,7 +161,6 @@
 				334F0D0E28EF501F00900CFF /* ProtocolNinja.swift in Sources */,
 				334F0CEE28EF41EB00900CFF /* SceneDelegate.swift in Sources */,
 				33F13DC828F09F61009B0B26 /* DetailVC.swift in Sources */,
-				33B7E46328F9E09B0009FF74 /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

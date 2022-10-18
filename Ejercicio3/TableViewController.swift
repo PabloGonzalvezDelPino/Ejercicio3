@@ -31,7 +31,7 @@ class TableViewController: UITableViewController {
         ,
      "Roca":[
         Ninja(imageUrl: "https://static.wikia.nocookie.net/naruto/images/8/86/Deidara_con_su_Ojo_Telesc%C3%B3pico.png/revision/latest?cb=20160417144808&path-prefix=es", name: "Deidara", village: "Roca",description: "Un ninja originario de la aldea oculta de la hoja pero que traicionó a la aldea y vive desterrado"),
-        Ninja(imageUrl: "https://static.wikia.nocookie.net/naruto/images/8/86/Deidara_con_su_Ojo_Telesc%C3%B3pico.png/revision/latest?cb=20160417144808&path-prefix=es", name: "Onoki", village: "Roca",description: "Un ninja originario de la aldea oculta de la hoja pero que traicionó a la aldea y vive desterrado")]
+        Ninja(imageUrl: "https://static.wikia.nocookie.net/naruto/images/1/1c/%C5%8Cnoki_Parte_II_Anime.png/revision/latest?cb=20180901131642&path-prefix=es", name: "Onoki", village: "Roca",description: "Un ninja originario de la aldea oculta de la hoja pero que traicionó a la aldea y vive desterrado")]
     ]
     
     
