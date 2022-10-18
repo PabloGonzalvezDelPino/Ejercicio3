@@ -162,8 +162,29 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iO4-Sc-sz2">
-                                <rect key="frame" x="0.0" y="577" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="537" width="414" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rva-G1-Mex">
+                                <rect key="frame" x="250" y="386" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pick Photo">
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addImageBT:" destination="h6F-9h-enc" eventType="touchUpInside" id="Ogc-XB-qRO"/>
+                                    <action selector="addPhotoBT:" destination="hRd-oX-Jpw" eventType="touchUpInside" id="Oca-VR-TqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3G-Jp-wr7">
+                                <rect key="frame" x="150" y="772" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Ninja">
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addNinjaBT:" destination="h6F-9h-enc" eventType="touchUpInside" id="frK-B3-TUV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JB7-Md-Nhd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,12 +193,20 @@
                             <constraint firstItem="JB7-Md-Nhd" firstAttribute="trailing" secondItem="hhB-qy-ZNg" secondAttribute="trailing" constant="50" id="2Y1-wn-ziB"/>
                             <constraint firstItem="JB7-Md-Nhd" firstAttribute="trailing" secondItem="9Ix-Yz-sEb" secondAttribute="trailing" constant="50" id="323-0O-PjJ"/>
                             <constraint firstItem="iO4-Sc-sz2" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" id="Aet-9A-At9"/>
+                            <constraint firstItem="ooW-gY-8gM" firstAttribute="top" secondItem="rva-G1-Mex" secondAttribute="bottom" constant="11" id="Ev3-8M-ghR"/>
                             <constraint firstItem="9Ix-Yz-sEb" firstAttribute="top" secondItem="JB7-Md-Nhd" secondAttribute="top" constant="20" id="Gzr-Ji-UZo"/>
+                            <constraint firstItem="rva-G1-Mex" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" constant="250" id="Jgx-Hx-Sq1"/>
+                            <constraint firstItem="L3G-Jp-wr7" firstAttribute="top" secondItem="iO4-Sc-sz2" secondAttribute="bottom" constant="19" id="L50-gI-b7y"/>
+                            <constraint firstItem="L3G-Jp-wr7" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" constant="150" id="O6A-6I-nxo"/>
+                            <constraint firstItem="iO4-Sc-sz2" firstAttribute="top" secondItem="hhB-qy-ZNg" secondAttribute="bottom" constant="10" id="PII-7e-0vO"/>
+                            <constraint firstItem="JB7-Md-Nhd" firstAttribute="trailing" secondItem="rva-G1-Mex" secondAttribute="trailing" constant="50" id="REY-Lo-Pl0"/>
+                            <constraint firstItem="JB7-Md-Nhd" firstAttribute="bottom" secondItem="L3G-Jp-wr7" secondAttribute="bottom" constant="10" id="RpM-98-OeJ"/>
                             <constraint firstItem="9Ix-Yz-sEb" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" constant="50" id="Txd-xF-QCG"/>
+                            <constraint firstItem="JB7-Md-Nhd" firstAttribute="trailing" secondItem="L3G-Jp-wr7" secondAttribute="trailing" constant="150" id="VEW-OG-ywI"/>
                             <constraint firstItem="JB7-Md-Nhd" firstAttribute="trailing" secondItem="ooW-gY-8gM" secondAttribute="trailing" constant="50" id="XLH-5N-bsm"/>
                             <constraint firstItem="iO4-Sc-sz2" firstAttribute="trailing" secondItem="JB7-Md-Nhd" secondAttribute="trailing" id="dHX-ac-EuW"/>
                             <constraint firstItem="ooW-gY-8gM" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" constant="50" id="daJ-g9-pkG"/>
-                            <constraint firstItem="iO4-Sc-sz2" firstAttribute="top" secondItem="hhB-qy-ZNg" secondAttribute="bottom" constant="50" id="eQn-rS-4cA"/>
+                            <constraint firstItem="rva-G1-Mex" firstAttribute="top" secondItem="9Ix-Yz-sEb" secondAttribute="bottom" constant="8" id="gga-0P-0O7"/>
                             <constraint firstItem="ooW-gY-8gM" firstAttribute="top" secondItem="9Ix-Yz-sEb" secondAttribute="bottom" constant="50" id="gmW-DZ-c9h"/>
                             <constraint firstItem="hhB-qy-ZNg" firstAttribute="leading" secondItem="JB7-Md-Nhd" secondAttribute="leading" constant="50" id="sEQ-A5-p96"/>
                         </constraints>
@@ -191,8 +220,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rio-NR-a73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hRd-oX-Jpw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-70" y="753"/>
+            <point key="canvasLocation" x="-71.014492753623188" y="752.67857142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Hn1-Bj-oqp">

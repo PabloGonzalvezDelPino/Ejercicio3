@@ -16,7 +16,25 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     
     let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
     let imagePredURL = "https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png"
+    @IBAction func addImageBT(_ sender: UIButton) {
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.sourceType = .photoLibrary
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
     
+    @IBAction func addNinjaBT(_ sender: Any) {
+        
+      /*  if ((nameTF.text?.isEmpty) != nil && descriptionTF.text){
+            
+        }*/
+        
+        
+        
+        
+        
+    }
     override func viewWillAppear(_ animated: Bool) {
         let url = URL(string: imagePredURL)
         let data = try? Data(contentsOf: url!)
@@ -39,4 +57,20 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
         let title = self.options[row]
         return title
     }   
+}
+
+extension AddVC: UINavigationControllerDelegate & UIImagePickerControllerDelegate{
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print(info)
+        
+        let key = UIImagePickerController.InfoKey(rawValue: UIImagePickerController.InfoKey.originalImage.rawValue)
+        
+        if let image = info[key] as? UIImage{
+            self.addImage.image = image
+            picker.dismiss(animated: true)
+        }
+    }
 }

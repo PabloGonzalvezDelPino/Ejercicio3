@@ -309,6 +309,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ejercicio3/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Photo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = Photo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,6 +339,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ejercicio3/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Photo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = Photo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
