@@ -41,6 +41,7 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
             table.reloadData()
             nameTF.text = ""
             descriptionTF.text = ""
+            dismiss(animated: true)
             
             //performSegue(withIdentifier: "toTable", sender: nil)
         }
@@ -53,7 +54,6 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
         let data = try? Data(contentsOf: url!)
         let image: UIImage = UIImage(data: data!)!
         addImage.image = image
-        tVC.tableView.reloadData()
         
         }
         

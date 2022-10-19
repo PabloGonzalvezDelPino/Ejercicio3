@@ -19,6 +19,9 @@ class TableViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func addButton(_ sender: Any) {
+        performSegue(withIdentifier: "add", sender: nil)
+    }
     
     var data: Dictionary<String,[Ninja]> =
     ["Hoja": [
@@ -68,21 +71,21 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let proCell: MyCell = tableView.dequeueReusableCell(withIdentifier: "proCell", for: indexPath) as! MyCell
+            let proCell: MyCell = tableView.dequeueReusableCell(withIdentifier: "proCell", for: indexPath) as! MyCell
+            let name = data[indexPath.section.toSection()]?[indexPath.row].getName()
+            let village = data[indexPath.section.toSection()]?[indexPath.row].getVillage()
+            let url = URL(string: (data[indexPath.section.toSection()]?[indexPath.row].getImageUrl())!)
+            let data = try? Data(contentsOf: url!)
+            let imageView: UIImage = UIImage(data: data!)!
+            
+            proCell.nameLB.text = name
+            proCell.villageLB.text = village
+            proCell.ninjaIV.image = imageView
+            return proCell
         
-        let name = data[indexPath.section.toSection()]?[indexPath.row].getName()
-        let village = data[indexPath.section.toSection()]?[indexPath.row].getVillage()
-        let url = URL(string: (data[indexPath.section.toSection()]?[indexPath.row].getImageUrl())!)
-        let data = try? Data(contentsOf: url!)
-        let imageView: UIImage = UIImage(data: data!)!
-        
-        proCell.nameLB.text = name
-        proCell.villageLB.text = village
-        proCell.ninjaIV.image = imageView
-        return proCell
+
     }
     
- 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -102,9 +105,10 @@ class TableViewController: UITableViewController {
             destination.cellText = descriptionSelected
             destination.cellVillage = villageSelected
         }
-        /*if let destination = segue.destination as? AddVC {
-            destination.table = tableView*/
+        if let destination = segue.destination as? AddVC {
             
+            destination.table = self.tableView
+        }
         
     }
     
@@ -114,7 +118,7 @@ class TableViewController: UITableViewController {
     
     func addToData(urlImage: String, nameNinja: String,  villageNinja: String,  descriptionNinja: String){
         data[villageNinja]?.append(Ninja(imageUrl: urlImage, name: nameNinja, village: villageNinja, description: descriptionNinja))
-        self.tableView.reloadData()
+ 
     }
     
 }
