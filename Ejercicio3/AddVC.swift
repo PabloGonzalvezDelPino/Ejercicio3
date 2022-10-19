@@ -13,9 +13,15 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var descriptionTF: UITextField!
     @IBOutlet weak var villagePV: UIPickerView!
+    let tVC = TableViewController()
+    var table: UITableView!
     
     let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
     let imagePredURL = "https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png"
+    var urlImage: String = ""
+    var nameText: String = ""
+    var descriptionText: String = ""
+    var villageText: String = ""
     @IBAction func addImageBT(_ sender: UIButton) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -26,20 +32,29 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     
     @IBAction func addNinjaBT(_ sender: Any) {
         
-      /*  if ((nameTF.text?.isEmpty) != nil && descriptionTF.text){
+        if (!(nameTF.text!.isEmpty ) && !(descriptionTF.text!.isEmpty) ){
+            nameText = nameTF.text ?? ""
+            descriptionText = descriptionTF.text ?? ""
+            villageText = "Hoja"
+
+            tVC.addToData(urlImage: "https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png" , nameNinja:nameText , villageNinja: villageText, descriptionNinja: descriptionText)
+            table.reloadData()
+            nameTF.text = ""
+            descriptionTF.text = ""
             
-        }*/
-        
-        
-        
-        
-        
+            //performSegue(withIdentifier: "toTable", sender: nil)
+        }
+  
     }
+    
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let url = URL(string: imagePredURL)
         let data = try? Data(contentsOf: url!)
         let image: UIImage = UIImage(data: data!)!
         addImage.image = image
+        tVC.tableView.reloadData()
+        
         }
         
     override func viewDidLoad() {

@@ -9,8 +9,18 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
     
-    let data: Dictionary<String,[Ninja]> =
+    
+    var data: Dictionary<String,[Ninja]> =
     ["Hoja": [
         Ninja(imageUrl: "https://www.cinepremiere.com.mx/wp-content/uploads/2022/10/Naruto-20-aniversario-video-900x506.jpg", name: "Naruto", village: "Hoja", description: "El ninja mas golfo de la historia de los ninjas"),
          Ninja(imageUrl: "https://i.ytimg.com/vi/OGkK7dBJsqw/maxresdefault.jpg", name: "Sasuke", village: "Hoja",description: "Un ninja originario de la aldea oculta de la hoja pero que traicionó a la aldea y vive desterrado"),
@@ -34,12 +44,11 @@ class TableViewController: UITableViewController {
         Ninja(imageUrl: "https://static.wikia.nocookie.net/naruto/images/1/1c/%C5%8Cnoki_Parte_II_Anime.png/revision/latest?cb=20180901131642&path-prefix=es", name: "Onoki", village: "Roca",description: "Un ninja originario de la aldea oculta de la hoja pero que traicionó a la aldea y vive desterrado")]
     ]
     
-    
-    
     var nameSelected: String = ""
     var urlImageSelected: String = ""
     var villageSelected: String = ""
     var descriptionSelected: String = ""
+    
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,20 +96,25 @@ class TableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as! DetailVC).cellUrl = urlImageSelected
-        (segue.destination as! DetailVC).cellName = nameSelected
-        (segue.destination as! DetailVC).cellText = descriptionSelected
-        (segue.destination as! DetailVC).cellVillage = villageSelected
+        if let destination = segue.destination as? DetailVC {
+            destination.cellUrl = urlImageSelected
+            destination.cellName = nameSelected
+            destination.cellText = descriptionSelected
+            destination.cellVillage = villageSelected
+        }
+        /*if let destination = segue.destination as? AddVC {
+            destination.table = tableView*/
+            
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    func addToData(urlImage: String, nameNinja: String,  villageNinja: String,  descriptionNinja: String){
+        data[villageNinja]?.append(Ninja(imageUrl: urlImage, name: nameNinja, village: villageNinja, description: descriptionNinja))
+        self.tableView.reloadData()
     }
     
 }
