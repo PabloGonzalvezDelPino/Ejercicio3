@@ -70,7 +70,6 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
             let proCell: MyCell = tableView.dequeueReusableCell(withIdentifier: "proCell", for: indexPath) as! MyCell
             let name = data[indexPath.section.toSection()]?[indexPath.row].getName()
             let village = data[indexPath.section.toSection()]?[indexPath.row].getVillage()
@@ -82,8 +81,6 @@ class TableViewController: UITableViewController {
             proCell.villageLB.text = village
             proCell.ninjaIV.image = imageView
             return proCell
-        
-
     }
     
     
@@ -108,8 +105,8 @@ class TableViewController: UITableViewController {
         if let destination = segue.destination as? AddVC {
             
             destination.table = self.tableView
+            destination.tVC = self
         }
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -118,9 +115,10 @@ class TableViewController: UITableViewController {
     
     func addToData(urlImage: String, nameNinja: String,  villageNinja: String,  descriptionNinja: String){
         data[villageNinja]?.append(Ninja(imageUrl: urlImage, name: nameNinja, village: villageNinja, description: descriptionNinja))
- 
+        tableView.reloadData()
+        
+      //print(data)
     }
-    
 }
 
 extension Int {

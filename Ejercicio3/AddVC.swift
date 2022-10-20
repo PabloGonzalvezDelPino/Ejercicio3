@@ -13,7 +13,7 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var descriptionTF: UITextField!
     @IBOutlet weak var villagePV: UIPickerView!
-    let tVC = TableViewController()
+    var tVC: TableViewController!
     var table: UITableView!
     
     let options: [String] = ["Hoja", "Arena", "Lluvia", "Niebla", "Roca"]
@@ -22,6 +22,7 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     var nameText: String = ""
     var descriptionText: String = ""
     var villageText: String = ""
+    
     @IBAction func addImageBT(_ sender: UIButton) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -29,14 +30,14 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
         vc.allowsEditing = true
         present(vc, animated: true)
     }
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        villageText = options[row]
+    }
     @IBAction func addNinjaBT(_ sender: Any) {
         
         if (!(nameTF.text!.isEmpty ) && !(descriptionTF.text!.isEmpty) ){
             nameText = nameTF.text ?? ""
             descriptionText = descriptionTF.text ?? ""
-            villageText = "Hoja"
-
             tVC.addToData(urlImage: "https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png" , nameNinja:nameText , villageNinja: villageText, descriptionNinja: descriptionText)
             table.reloadData()
             nameTF.text = ""
@@ -71,7 +72,8 @@ class AddVC: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let title = self.options[row]
         return title
-    }   
+    }
+    
 }
 
 extension AddVC: UINavigationControllerDelegate & UIImagePickerControllerDelegate{
