@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		334F0CEC28EF41EB00900CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0CEB28EF41EB00900CFF /* AppDelegate.swift */; };
 		334F0CEE28EF41EB00900CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0CED28EF41EB00900CFF /* SceneDelegate.swift */; };
-		334F0CF028EF41EB00900CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0CEF28EF41EB00900CFF /* ViewController.swift */; };
 		334F0CF328EF41EB00900CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF128EF41EB00900CFF /* Main.storyboard */; };
 		334F0CF528EF41EC00900CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF428EF41EC00900CFF /* Assets.xcassets */; };
 		334F0CF828EF41EC00900CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334F0CF628EF41EC00900CFF /* LaunchScreen.storyboard */; };
+		334F0D0A28EF4F2200900CFF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0928EF4F2200900CFF /* TableViewController.swift */; };
+		334F0D0C28EF4FA200900CFF /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0B28EF4FA200900CFF /* Ninja.swift */; };
+		334F0D0E28EF501F00900CFF /* ProtocolNinja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */; };
+		334F0D1028EF504C00900CFF /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F0D0F28EF504C00900CFF /* MyCell.swift */; };
+		33DA7C0D28FF0D7A003DA71D /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA7C0C28FF0D7A003DA71D /* AddVC.swift */; };
+		33F13DC828F09F61009B0B26 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F13DC728F09F61009B0B26 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		334F0CE828EF41EB00900CFF /* Ejercicio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejercicio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F0CEB28EF41EB00900CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		334F0CED28EF41EB00900CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		334F0CEF28EF41EB00900CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		334F0CF228EF41EB00900CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		334F0CF428EF41EC00900CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		334F0CF728EF41EC00900CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		334F0CF928EF41EC00900CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334F0D0928EF4F2200900CFF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		334F0D0B28EF4FA200900CFF /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
+		334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNinja.swift; sourceTree = "<group>"; };
+		334F0D0F28EF504C00900CFF /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		33DA7C0C28FF0D7A003DA71D /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		33F13DC728F09F61009B0B26 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				334F0CEB28EF41EB00900CFF /* AppDelegate.swift */,
 				334F0CED28EF41EB00900CFF /* SceneDelegate.swift */,
-				334F0CEF28EF41EB00900CFF /* ViewController.swift */,
 				334F0CF128EF41EB00900CFF /* Main.storyboard */,
+				334F0D0928EF4F2200900CFF /* TableViewController.swift */,
 				334F0CF428EF41EC00900CFF /* Assets.xcassets */,
 				334F0CF628EF41EC00900CFF /* LaunchScreen.storyboard */,
 				334F0CF928EF41EC00900CFF /* Info.plist */,
+				334F0D0B28EF4FA200900CFF /* Ninja.swift */,
+				334F0D0D28EF501F00900CFF /* ProtocolNinja.swift */,
+				334F0D0F28EF504C00900CFF /* MyCell.swift */,
+				33F13DC728F09F61009B0B26 /* DetailVC.swift */,
+				33DA7C0C28FF0D7A003DA71D /* AddVC.swift */,
 			);
 			path = Ejercicio3;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334F0CF028EF41EB00900CFF /* ViewController.swift in Sources */,
+				33DA7C0D28FF0D7A003DA71D /* AddVC.swift in Sources */,
 				334F0CEC28EF41EB00900CFF /* AppDelegate.swift in Sources */,
+				334F0D0A28EF4F2200900CFF /* TableViewController.swift in Sources */,
+				334F0D0C28EF4FA200900CFF /* Ninja.swift in Sources */,
+				334F0D1028EF504C00900CFF /* MyCell.swift in Sources */,
+				334F0D0E28EF501F00900CFF /* ProtocolNinja.swift in Sources */,
 				334F0CEE28EF41EB00900CFF /* SceneDelegate.swift in Sources */,
+				33F13DC828F09F61009B0B26 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ejercicio3/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Photo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = Photo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +339,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ejercicio3/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = Photo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = Photo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
